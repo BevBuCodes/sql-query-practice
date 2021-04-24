@@ -166,5 +166,8 @@ Answer: 101
 
 ```
 Paste your query below:
-
+select count(fd_group.fddrp_desc), fd_group.fddrp_desc from food_des
+join fd_group
+on food_des.fdgrp_cd = fd_group.fdgrp_cd
+group by fd_group.fddrp_desc;
 ```
